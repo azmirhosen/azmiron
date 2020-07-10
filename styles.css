@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Reset CSS Begins */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset CSS Ends */
+
+/* Helper Classes Begins */
+.alignLeft{
+  float: left;
+}
+
+.alignRight{
+  float: right;
+}
+
+strong,
+b{
+  font-weight: 700;
+}
+
+em,
+i{
+  font-style: italic;
+}
+
+p,
+ul li,
+ol li{
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+/* Helper Classes Ends */
+
+/* General Rules */
+@font-face {
+  font-family: 'HelveticaNeue-Thin';
+  src: local('HelveticaNeue-Thin.otf'),url('HelveticaNeue-Thin.otf') format('opentype');
+}
+/* Banner Part */
+.hero{
+  width: 100%;
+  background-image: linear-gradient(rgba(179,56,46,0.6),rgba(179,56,46,0.6)), url(../images/cupcakes.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner{
+  padding-top: 30px;
+}
+
+nav ul{
+
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  font-size: 16px;
+  font-family: 'Montserrat';
+  color: white;
+  padding: 20px 0;
+  margin-left: 40px;
+}
+
+.iphone-section{
+  width: 100%;
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.description-one h1{
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 52px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.description-one h2{
+  color: white;
+  font-family: 'HelveticaNeue-Thin';
+  font-size: 36px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  line-height: 40px;
+  padding-right: 25px;
+}
+
+.iphone-section .iphone img{
+  width: 80%;
+  margin: 0 auto;
+  margin-right: -65px;
+}
+
+.iphone{
+  position: relative;
+  margin-bottom: -240px;
+}
+
+.iph-btn{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+padding: 23px 35px;
+background: #282828;
+color: white;
+border-radius: 50px;
+transition: .4s;
+}
+
+.iph-btn:hover{
+  background-color: #313131;
+  transition: .4s;
+}
+
+.iph-btn img{
+  vertical-align: middle;
+  padding-right: 20px;
+}
+/* Banner Part */
+
+/* App Features */
+.app-features{
+  width: 100%;
+  height: 800px;
+}
+
+.feature-container{
+  text-align: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.feature-headings h2{
+  color: #8a8a8a;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+.feature-headings h3{
+  color: #8a8a8a;
+  padding: 15px 100px;
+  line-height: 24px;
+  font-family: 'HelveticaNeue-Thin';
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+.feature-div{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.feature-div div{
+  width: 360px;
+  height: 450px;
+  float: left;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 0 2px;
+  transition: all ease-in-out .4s;
+}
+
+.feature-div div:hover{
+  background-color: #f9f9f9;
+  transition: all ease-in-out .4s;
+  cursor: pointer;
+}
+
+.feature-div img{
+  display: block;
+  margin: 20px auto;
+
+}
+
+.feature-div  h2{
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  color:#8a8a8a;
+  margin: 20px 0;
+}
+
+.feature-div p{
+  color: #8a8a8a;
+  font-family: 'HelveticaNeue-Thin';
+  font-weight: lighter;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+/* App Features */
+/* Display Picture */
+.display-pic{
+  background-image: url(../images/nose-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 175px 0;
+}
+
+.display-container{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display-container h2{
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+.display-container h3{
+  color: #8a8a8a;
+  font-family: 'HelveticaNeue-Thin';
+  font-weight: lighter;
+  font-size: 24px;
+  margin: 60px 0;
+  line-height: 36px;
+}
+
+.display-container a{
+  background-color: #f55150;
+  border: 1px solid #f55150;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  transition: all ease-in-out .1s;
+}
+
+.display-container a:hover{
+  color: #f55150;
+  background-color: inherit;
+  transition: all ease-in-out .1s;
+}
+
+.span-red{
+  color: #f55150;
+}
+/* Display Picture */
+
+/* Footer Part */
+.footer-one{
+  width: 100%;
+  background-color: #2e2e38;
+  padding: 130px 0;
+}
+
+.footer-sections{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.footer-div{
+  margin-top: 50px;
+  margin-right: 75px;
+  width: 25%;
+}
+.footer-div h2{
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.footer-div p{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: white;
+  line-height: 24px;
+}
+
+.footer-two{
+  width: 100%;
+  background-color: #d7dedc;
+  padding: 45px 0;
+}
+
+.footer-two div{
+  max-width: 1100px;
+  width: 100%;
+
+}
+
+.three-sections{
+  margin: 0 auto;
+}
+.three-sections .section{
+  text-align: center;
+}
+
+/* Footer Part */
