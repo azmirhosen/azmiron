@@ -1,0 +1,28 @@
+@media  (max-width: 768px){
+    body{
+        width:100%;
+    }
+    .hr-style-wrefe
+    {
+        width: 100%;
+    }
+    .full-header
+    {
+        width: 100%;
+    }
+    .imgage-div img 
+    {
+        
+        width: 152%;
+    }
+    .full-body{
+        width: 100%;
+    }
+    .full-body-wref
+    {
+        width: 100%;
+    }
+    .body-div 
+    {
+        width: 100%;}
+}
