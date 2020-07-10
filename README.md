@@ -1,2 +1,0 @@
-# azmiron
-thisweb
